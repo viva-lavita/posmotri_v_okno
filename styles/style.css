@@ -30,13 +30,14 @@ ol {
 .page {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   background-color: #1b1919;
-  background-color: #e0d2d2;
   inline-size: 1200px;
 }
 
@@ -44,7 +45,6 @@ ol {
   display: flex;
   gap: 30px;
   max-height: 534px;
-  margin: 133px 0 133px 0;
   inline-size: 95%;
 }
 
@@ -54,7 +54,7 @@ ol {
   gap: 16px;
   margin-block-start: 78px;
   inline-size: 62.5%;
-  block-size: 100%;
+  min-block-size: 534px;
 }
 
 .result__video-container {
@@ -191,7 +191,7 @@ ol {
   display: flex;
   flex-direction: column;
   inline-size: 35%;
-  block-size: 100%;
+  min-block-size: 534px;
 }
 
 .title {
