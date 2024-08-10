@@ -92,16 +92,15 @@ ol {
   cursor: default;
 }
 
-.search-form__label:hover {
-  cursor: pointer;
-}
-
-
 .search-form__label {
   display: flex;
   align-items: center;
   gap: 8px;
+}
 
+.search-form__label:hover .search-form__label-text {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .search-form__label:has(:focus-visible) {
